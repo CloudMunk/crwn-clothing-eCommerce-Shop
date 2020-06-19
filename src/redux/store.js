@@ -4,7 +4,12 @@ import { persistStore } from 'redux-persist';
 
 import rootReducer from './root-reducer';
 
-const middleWares = [logger];
+const middleWares = [];
+
+// Only push logger into middleWares if we are in development.
+if(process.env.NODE_ENV === 'development') {
+    middleWares.push(logger);
+}
 
 
 // Technically don't need to export here, but doing it just in case we need it down the line.

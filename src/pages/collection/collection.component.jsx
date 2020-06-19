@@ -9,7 +9,7 @@ import { selectCollection } from '../../redux/shop/shop.selectors';
 
 import './collection.styles.scss';
 
-const CollectionPage = ({ collection }) => {
+const CollectionPage = ({ collection, ...otherProps }) => {
     const { title, items } = collection;
     return (
     <div className="collection-page">
@@ -17,7 +17,7 @@ const CollectionPage = ({ collection }) => {
         <div className="items">
             {
                 items.map(item => 
-                    <CollectionItem key={item.id} item={item} />
+                    <CollectionItem key={item.id} item={item} {...otherProps} />
                 )
             }
         </div>
