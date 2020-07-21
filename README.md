@@ -1,4 +1,4 @@
-Crown Clothing eCommerce app built with React, Redux, Hooks, GraphQL, ContextAPI, Stripe & Firebase.
+Crown Clothing eCommerce app built with React, Redux, ContextAPI, Stripe & Firebase. Hooks & GraphQL coming soon!
 
 
 
